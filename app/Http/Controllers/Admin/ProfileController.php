@@ -49,8 +49,8 @@ class ProfileController extends Controller
         unset($form['image']);
 
         // データベースに保存する
-        $news->fill($form);
-        $news->save();
-        return redirect('admin/profile/edit');
+        $news->fill($form)->save();
+        
+        return redirect('admin/profile');
     }
 }
