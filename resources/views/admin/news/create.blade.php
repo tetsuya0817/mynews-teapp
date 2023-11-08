@@ -3,8 +3,8 @@
 @extends('layouts.admin')
 
 
-{{-- admin.blade.phpの@yield('title')に'Mynews-Teapp'を埋め込む --}}
-@section('title', 'Mynews-Teapp')
+{{-- admin.blade.phpの@yield('title')に'Softballニュースの新規作成'を埋め込む --}}
+@section('title', 'Softballニュースの新規作成')
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
