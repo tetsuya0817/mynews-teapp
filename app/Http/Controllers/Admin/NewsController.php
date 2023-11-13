@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 // 以下の1行を追記することで、News Modelが扱えるようになる
 use App\Models\News;
 
+// 以下を追記
+use App\Models\History;
+
+use Carbon\Carbon;
+
 class NewsController extends Controller
 {
     public function add()

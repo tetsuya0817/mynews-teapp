@@ -10,6 +10,7 @@ use App\Models\Profile;
 
 class ProfileController extends Controller
 {
+    //
     public function add()
     {
         return view('admin.profile.create');
@@ -19,9 +20,9 @@ class ProfileController extends Controller
     {
         // 以下を追記
         // Validationを行う
-        $this->validate($request, News::$rules);
+        $this->validate($request, Profile::$rules);
 
-        $news = new News;
+        $news = new Profile;
         $form = $request->all();
         
         // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
@@ -63,7 +64,7 @@ class ProfileController extends Controller
     public function edit(Request $request)
     {
         // News Modelからデータを取得する
-        $news = News::find($request->id);
+        $news = Profile::find($request->id);
         if (empty($news)) {
             abort(404);
         }
