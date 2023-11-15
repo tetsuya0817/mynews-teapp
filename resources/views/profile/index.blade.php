@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-@extends('layouts.front')
+@extends('layouts.profile')
 
 @section('content')
     <div class="container">
